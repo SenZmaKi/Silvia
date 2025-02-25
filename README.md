@@ -8,17 +8,19 @@ Silvia is a server that uses OpenAI's GPT-4-based language model to extract info
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Server](#server)
-    - [Prerequisites](#prerequisites-1)
-    - [Setup virtual environment](#setup-virtual-environment)
-    - [Activate virtual environment](#activate-virtual-environment)
-    - [Install dependencies](#install-dependencies)
+    - [Setup](#setup)
+      - [Prerequisites](#prerequisites-1)
+      - [Setup virtual environment](#setup-virtual-environment)
+      - [Activate virtual environment](#activate-virtual-environment)
+      - [Install dependencies](#install-dependencies)
     - [Run server](#run-server)
     - [Configuration](#configuration)
     - [Endpoints](#endpoints)
       - [POST `/`](#post-)
   - [Example](#example)
-    - [Prerequisites](#prerequisites-2)
-    - [Install dependencies](#install-dependencies-1)
+    - [Setup](#setup-1)
+      - [Prerequisites](#prerequisites-2)
+      - [Install dependencies](#install-dependencies-1)
     - [Run example](#run-example)
 
 ## Prerequisites
@@ -31,18 +33,20 @@ git clone https://github.com/SenZmaKi/Silvia.git
 
 ## Server
 
-### Prerequisites
+### Setup
+
+#### Prerequisites
 
 - [Python 3.12.7](https://www.python.org/downloads/release/python-3127/) or higher
 - [OpenAI API Key](https://platform.openai.com/account/api-keys), set it to the `OPENAI_API_KEY` environment variable (can be set in a `.env` file in the root directory)
 
-### Setup virtual environment
+#### Setup virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate virtual environment
+#### Activate virtual environment
 
 - Windows
 
@@ -56,7 +60,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Install dependencies
+#### Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -91,11 +95,13 @@ Receives a JSON object with the following properties:
 
 - Extracts information from a receipt image.
 
-### Prerequisites
+### Setup
+
+#### Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/) version 23.2.0 or higher
 
-### Install dependencies
+#### Install dependencies
 
 ```bash
 npm install
